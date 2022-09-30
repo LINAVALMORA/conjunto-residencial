@@ -1,0 +1,32 @@
+create database Conjunto2;
+use Conjunto2;
+
+create table Administrador(
+id_administrador int not null,
+nombre varchar(45) not null,
+documento varchar(20) not null,
+telefono varchar(10)not null,
+email varchar(45) not null,
+direccion varchar(20)not null,
+usuario varchar(20)not null,
+contraseña varchar(20)not null,
+primary key (id_administrador)
+);
+
+create table propietario(
+id_propietario int not null,
+nombre varchar(45) not null,
+usuario varchar (45) not null,
+contrasena varchar (45) not null,
+documento varchar (20) not null,
+telefono varchar (10)not null,
+email varchar(45)not null,
+persona varchar (20)not null,
+cuenta varchar (20)not null,
+primary key (id_propietario)
+);
+
+create table Inmueble(
+id_inmueble int not null,
+nombre varchar(45) not null,
+matricula …
